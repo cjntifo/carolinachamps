@@ -1,0 +1,108 @@
+<html>
+    <head>
+        
+        <style>
+            /*
+                - Royal Blue
+                HTML code:	#0A2262
+                RGB code:	R: 10 G: 34 B: 98
+                - Orange
+                HTML code:	#E5883B
+                RGB code:	R: 229 G: 136 B: 59
+            */
+            
+            h1, h2, h3, h4, h5, h6, p
+            {
+                font-family: Ariel, sans-serif;
+            }
+            
+            .color-block
+            {
+                width: 100%;
+                height: 6em;
+                padding: 0 0.2em;
+                border-radius: 4px;
+            }
+            
+            .black {background-color: #222;}
+            .dark-grey {background-color: #AAA;}
+            .light-grey {background-color: #DDD;}
+            .white {background-color: #FFE;}
+            .blue {background-color: #0A2262;}
+            .orange {background-color: #E5883B;}
+            
+            *
+            {
+                box-sizing: border-box;
+            }
+            
+            div {display: block;}
+            
+            .wrap
+            {
+                width: 70%;
+                margin: 0 15%;
+            }
+            
+            [class*="col-"] 
+            {
+              float: left;
+              padding: 0.5em;
+            }
+            
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+            
+            section::after, .row::after 
+            {
+                content: "";
+                clear: both;
+                display: table;
+            }
+        </style>
+    </head>
+    
+    <body>
+        
+        <div class="wrap">
+            <h1 style="text-align: center">Style Guide</h1>
+            <h2>Typography</h2>
+            <p>Lorem ipsum sit dolor amet...</p>
+            <br>
+            <h2>Colors</h2>
+            <h3>Text Colors</h3>
+            <section>
+                <div class="col-6"><div class="color-block black"></div></div>
+                <div class="col-6"><div class="color-block dark-grey"></div></div>
+            </section>
+
+            <h3>Main Colors</h3>
+
+            <section>
+                <div class="col-6"><div class="color-block blue"></div></div>
+                <div class="col-6"><div class="color-block orange"></div></div>
+            </section>
+            <section>
+                <div class="col-6"><div class="color-block light-grey"></div></div>
+                <div class="col-6"><div class="color-block white"></div></div>
+            </section>
+            
+            <h2>Logos</h2>
+            <img src="res/logo.jpg" style="height: 20em; width: 20em;"/>
+            
+            <br><br><br>
+            <br><br><br>
+            
+        </div>
+    </body>
+</html>

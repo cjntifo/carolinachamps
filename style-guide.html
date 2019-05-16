@@ -1,5 +1,7 @@
 <html>
     <head>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Domine" rel="stylesheet"> 
         
         <style>
             /*
@@ -13,13 +15,18 @@
             
             h1, h2, h3, h4, h5, h6, p
             {
-                font-family: Ariel, sans-serif;
+                font-family: Roboto-Slab, Ariel, sans-serif;
+            }
+            
+            hr
+            {
+                border-color: #EEE;
             }
             
             .color-block
             {
                 width: 100%;
-                height: 6em;
+                height: 4em;
                 padding: 0 0.2em;
                 border-radius: 4px;
             }
@@ -27,9 +34,20 @@
             .black {background-color: #222;}
             .dark-grey {background-color: #AAA;}
             .light-grey {background-color: #DDD;}
-            .white {background-color: #FFE;}
+            .white {background-color: #FFF;}
             .blue {background-color: #0A2262;}
             .orange {background-color: #E5883B;}
+            .purple {background-color: #C860DB;}
+            
+            [class*="desc-"]
+            {
+                color: #667;
+                font-family: Roboto-Slab, Ariel, sans-serif;
+                font-size: 0.6em;
+            }
+            
+            .desc-left {text-align: left;}
+            .desc-right {text-align: right;}
             
             *
             {
@@ -75,30 +93,56 @@
     <body>
         
         <div class="wrap">
-            <h1 style="text-align: center">Style Guide</h1>
+            <h1 style="text-align: center">Brand Guidelines</h1>
             <h2>Typography</h2>
-            <p>Lorem ipsum sit dolor amet...</p>
+            <section>
+                <div class="col-4">
+                    <p style="margin: 0 0 1em 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </section>
+            
             <br>
             <h2>Colors</h2>
             <h3>Text Colors</h3>
+            <hr>
+            
             <section>
-                <div class="col-6"><div class="color-block black"></div></div>
-                <div class="col-6"><div class="color-block dark-grey"></div></div>
+                <div class="col-6">
+                    <div class="color-block black"></div>
+                    <div class="col-6 desc-left">FONT COLOR - DARK</div><div class="col-6 desc-right">#000000</div>
+                </div>
+                <div class="col-6">
+                    <div class="color-block dark-grey"></div>
+                    <div class="col-6 desc-left">FONT COLOR - LIGHT</div><div class="col-6 desc-right">#000000</div>
+                </div>
             </section>
 
             <h3>Main Colors</h3>
+            <hr>
 
             <section>
-                <div class="col-6"><div class="color-block blue"></div></div>
-                <div class="col-6"><div class="color-block orange"></div></div>
+                <div class="col-6">
+                    <div class="color-block blue"></div>
+                    <div class="col-6 desc-left">ROYAL BLUE</div><div class="col-6 desc-right">#000000</div>
+                </div>
+                <div class="col-6">
+                    <div class="color-block orange"></div>
+                    <div class="col-6 desc-left">ORANGE</div><div class="col-6 desc-right">#000000</div>
+                </div>
             </section>
             <section>
-                <div class="col-6"><div class="color-block light-grey"></div></div>
-                <div class="col-6"><div class="color-block white"></div></div>
+                <div class="col-6">
+                    <div class="color-block purple"></div>
+                    <div class="col-6 desc-left">BRAND COLOR X</div><div class="col-6 desc-right">#C860DB</div>
+                </div>
+                <div class="col-6">
+                    <div class="color-block light-grey"></div>
+                    <div class="col-6 desc-left">CAROLINA GREY</div><div class="col-6 desc-right">#C860DB</div>
+                </div>
             </section>
             
             <h2>Logos</h2>
-            <img src="res/logo.jpg" style="height: 20em; width: 20em;"/>
+            <img src="res/logo.jpg" style="height: 15em; width: 15em;"/>
             
             <br><br><br>
             <br><br><br>
